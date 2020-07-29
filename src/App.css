@@ -1,22 +1,369 @@
-.App {
+body {
+  background-color: black !important;
+}
+
+.no-border-radius {
+  border-radius: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+.no-border {
+  border: none !important;
+}
+
+.border {
+  border: 1px solid #d4d4d5 !important;
+}
+
+.navbar {
+  font-size: 1.2rem !important;
+}
+
+.nav-desktop {
+  height: 41px !important;
+  margin-bottom: 36px !important;
+}
+
+.nav-mobile {
+  height: 50px !important;
+  margin-bottom: 28px !important;
+}
+
+.nav-item-center {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
+.nav-space-between {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
+.hero {
+  background: url("https://takeradxrays.s3.us-east-2.amazonaws.com/optimized-hand-bones.jpg")
+    no-repeat center center/cover;
+  height: 80vh;
+  position: relative;
+}
+
+.dark-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.75);
+}
+
+.hero-align {
+  height: 100%;
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero-buttons-align {
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero-text {
+  font-size: 4rem !important;
+  line-height: 4.5rem !important;
+  margin-top: 15vh !important;
+}
+
+.btn {
+  max-width: 200px;
+  font-size: 1.5rem !important;
+  margin-left: 0.25rem !important;
+  margin-right: 0.25rem !important;
+}
+
+.cta-button {
+  /* background-color: #f39c12 !important; */
+  background-color: #ff9e00 !important;
+}
+
+.blog-roll-container {
+  background-color: black;
+  margin-top: 0;
+  padding-top: 2rem;
+}
+
+.sticky {
+  position: fixed !important;
+  margin-bottom: 100% !important;
+  width: 100%;
+}
+
+.stay-top {
+  position: fixed !important;
+  width: 100% !important;
+}
+
+.blog-card-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  background-color: rgba(50, 50, 50, 0.8) !important;
+  color: white !important;
+  font-size: 1.2rem !important;
+}
+
+.blog-card-text {
+  color: inherit !important;
+}
+
+.chart-title {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.chart-background {
+  background-color: darkgray;
+  min-height: 100vh;
+  padding-top: 1.5rem;
+}
+
+.home-background {
+  background-color: black;
+  min-height: 100vh;
+}
+
+.compose-background {
+  background-color: darkgray;
+  min-height: 100vh;
+  padding-top: 1.5rem;
+  padding-top: 8rem;
+  padding-bottom: 1rem;
+}
+
+.nav-btn {
+  margin-left: 0.5rem !important;
+  margin-right: 0.5rem !important;
+}
+
+.table-button {
+  width: 95%;
+  height: 100%;
+}
+
+.padding-bottom-1 {
+  padding-bottom: 1rem;
+}
+
+.margin-bottom-1 {
+  margin-bottom: 1rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.red {
+  color: red;
+}
+
+.custom-container {
+  color: lightgray;
+  padding-top: 2rem !important;
+  padding-bottom: 2rem !important;
+}
+
+.no-margin-top {
+  margin-top: 0rem !important;
+}
+
+.no-padding {
+  padding: 0 0 0 0 !important;
+}
+
+.rem-1-5 {
+  font-size: 1.5rem;
+}
+
+.white-centered-background {
+  background-color: white;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #09d3ac;
+.font-heavy {
+  font-weight: 900 !important;
+  font-size: large;
+}
+
+.hide {
+  display: none;
+}
+
+.padding-top-1 {
+  padding-top: 1.2rem;
+}
+
+.light-gray-background {
+  background-color: lightgray !important;
+}
+
+.paragraph {
+  margin-left: 1em !important;
+  margin-right: 1em !important;
+}
+
+.list-item {
+  margin-left: 1em !important;
+  margin-right: 1em !important;
+}
+
+.blog-image-preview {
+  max-height: 150px;
+  margin: auto;
+}
+
+.padding-all-1 {
+  padding: 1rem;
+}
+
+.margin-all-1 {
+  margin: 1rem;
+}
+
+.important {
+  color: darkred;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+.blog-tools {
+  position: fixed !important;
+  width: 100% !important;
+  margin-top: 8px;
+  z-index: 2;
+  max-width: 80%;
+  margin-left: 10%;
+}
+
+.margin-top-4 {
+  margin-top: 4rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.width-100 {
+  width: 100%;
+}
+
+.button-border {
+  border: solid 1px white !important;
+}
+
+.margin-bottom-1 {
+  margin-bottom: 1rem !important;
+}
+
+@media only screen and (max-width: 767px) {
+  .hero {
+    height: 65vh;
+  }
+  .hero-text {
+    font-size: 3rem !important;
+    line-height: 3.5rem !important;
+    margin-top: 0 !important;
+  }
+
+  .hero-btn {
+    font-size: 1.3rem !important;
+  }
+
+  .custom-container {
+    text-align: justify;
+  }
+
+  .compose-background {
+    padding-top: 9.3rem;
+    padding-bottom: 1rem;
+  }
+
+  .padding-top-1 {
+    padding-top: 1.2rem;
+  }
+
+  .text-center {
+    text-align: center;
+  }
+
+  .width-100 {
+    width: 100%;
+  }
+
+  .button-border {
+    border: solid 1px white !important;
+  }
+
+  .form > .field > .input > .label,
+  input {
+    border-radius: 0px !important;
+  }
+
+  table {
+    border-radius: 0px !important;
+  }
+
+  .blog-tools {
+    position: fixed !important;
+    width: 100% !important;
+    margin-top: 8px;
+    z-index: 2;
+    max-width: 100%;
+    margin-left: 0%;
+  }
+
+  .nav-mobile-open-appear {
+    opacity: 0;
+    transform: translateY(-5%);
+  }
+
+  .nav-mobile-open-appear-done {
+    transform: translateY(0%);
+    opacity: 1;
+    transition: all 300ms ease-in-out;
+  }
+
+  .ui.blog.container,
+  .paragraph,
+  .margin-all-1 {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+}
+
+@media print {
+  .printing-hide {
+    display: none;
+  }
+
+  .printing-show {
+    display: block;
+  }
+
+  .printing-limit-width {
+    max-width: 40vw;
+  }
+
+  .print-border {
+    border: solid #000 5px !important;
+    background-color: green !important;
+  }
+
+  tr {
+    border: solid #000 5px !important;
+  }
 }
